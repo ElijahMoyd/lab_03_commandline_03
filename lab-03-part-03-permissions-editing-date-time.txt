@@ -17,7 +17,8 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 
 What command did you use, and what was its output?
 ----------
-
+$ date
+Wed, Oct 20, 2021  5:22:25 AM
 
 
 ==========
@@ -25,7 +26,7 @@ What command did you use, and what was its output?
 
 What command did you use, and what was its output?
 ----------
-
+$ cal
 
 
 ==========
@@ -34,15 +35,61 @@ What command did you use, and what was its output?
 What commands did you use to do this?
 ----------
 
-
+$ cd ~ 
+$ pwd
 
 ==========
 4. Create an empty file called copy_to_backup.sh.  Verify that the file exists.
 
 What commands did you use to do this?
 ----------
+$ touch  copy_to_backup.sh
 
-
+drwxr-xr-x 1 elija 197610       0 Jun 19  2020 '3D Objects'/
+drwxr-xr-x 1 elija 197610       0 Mar 14  2020  ansel/
+drwxr-xr-x 1 elija 197610       0 Jun 19  2020  AppData/
+lrwxrwxrwx 1 elija 197610      30 Jun 19  2020 'Application Data' -> /c/Users/elija/AppData/Roaming/
+drwxr-xr-x 1 elija 197610       0 Jun 19  2020  Contacts/
+lrwxrwxrwx 1 elija 197610      58 Jun 19  2020  Cookies -> /c/Users/elija/AppData/Local/Microsoft/Windows/INetCookies/
+-rw-r--r-- 1 elija 197610       0 Oct 20 05:27  copy_to_backup.sh
+drwxr-xr-x 1 elija 197610       0 Oct 19 22:58 'Creative Cloud Files'/
+drwxr-xr-x 1 elija 197610       0 Oct  5 00:42  Desktop/
+drwxr-xr-x 1 elija 197610       0 Mar 14  2020  Documents/
+drwxr-xr-x 1 elija 197610       0 Oct 19 14:03  Downloads/
+drwxr-xr-x 1 elija 197610       0 Sep 27  2020 'Elijah.Moyd33@login.cuny.edu Creative Cloud Files (enterprise)'/
+drwxr-xr-x 1 elija 197610       0 Jun 19  2020  Favorites/
+-rw-r--r-- 1 elija 197610       0 Sep 29  2020  fightcade.log
+-rw-r--r-- 1 elija 197610       0 Sep 29  2020  fightcade-debug.log
+-rw-r--r-- 1 elija 197610    1107 Aug  7 18:10  ggpo-ng.ini
+-rw-r--r-- 1 elija 197610   15407 Oct  3 05:40  google.html
+drwxr-xr-x 1 elija 197610       0 Jun 19  2020  Links/
+lrwxrwxrwx 1 elija 197610      28 Jun 19  2020 'Local Settings' -> /c/Users/elija/AppData/Local/
+drwxr-xr-x 1 elija 197610       0 Mar 14  2020  MicrosoftEdgeBackups/
+drwxr-xr-x 1 elija 197610       0 Sep 22 19:49  mtec1003/
+drwxr-xr-x 1 elija 197610       0 Oct 20 04:20  mtec-1003-lab-03/
+-rw-r--r-- 1 elija 197610 2037760 Oct 20 01:33  mtec-1003-lab-03.tar
+drwxr-xr-x 1 elija 197610       0 Aug  5 17:16  Music/
+lrwxrwxrwx 1 elija 197610      24 Jun 19  2020 'My Documents' -> /c/Users/elija/Documents/
+lrwxrwxrwx 1 elija 197610      66 Jun 19  2020  NetHood -> '/c/Users/elija/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 elija 197610       0 Oct  3 05:58 'New folder'/
+-rw-r--r-- 1 elija 197610 8650752 Oct 19 14:20  NTUSER.DAT
+-rw-r--r-- 1 elija 197610 2097152 Jun 19  2020  ntuser.dat.LOG1
+-rw-r--r-- 1 elija 197610  458752 Jun 19  2020  ntuser.dat.LOG2
+-rw-r--r-- 1 elija 197610   65536 Jun 19  2020  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+-rw-r--r-- 1 elija 197610  524288 Jun 19  2020  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 elija 197610  524288 Jun 19  2020  NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 elija 197610      20 Jun 19  2020  ntuser.ini
+drwxr-xr-x 1 elija 197610       0 Jul 30 17:23  OneDrive/
+lrwxrwxrwx 1 elija 197610      66 Jun 19  2020  PrintHood -> '/c/Users/elija/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 elija 197610      55 Jun 19  2020  Recent -> /c/Users/elija/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 elija 197610       0 May 28 23:32 'Saved Games'/
+drwxr-xr-x 1 elija 197610       0 Jun 19  2020  Searches/
+lrwxrwxrwx 1 elija 197610      55 Jun 19  2020  SendTo -> /c/Users/elija/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 elija 197610      59 Jun 19  2020 'Start Menu' -> '/c/Users/elija/AppData/Roaming/Microsoft/Windows/Start Menu'/
+drwxr-xr-x 1 elija 197610       0 Oct  3 05:52  stuff/
+lrwxrwxrwx 1 elija 197610      58 Jun 19  2020  Templates -> /c/Users/elija/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 elija 197610       0 Aug 27  2020  Tracing/
+drwxr-xr-x 1 elija 197610       0 Oct 19 22:58  Videos/
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
@@ -50,14 +97,14 @@ What commands did you use to do this?
 What command did you use to find the permissions?
 ----------
 
-
+$ ls -l
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
 ----------
-
+$ chmod u+x copy_to_backup.sh
 
 
 ==========
@@ -67,7 +114,7 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
-
+$./copy_to_backup.sh
 
 
 ==========
@@ -76,7 +123,7 @@ What command did you use to try to execute the file?  What happens?
 What command did you use to do this?
 ----------
 
-
+$ nano ./copy_to_backup.sh
 
 ==========
 9. In your file, write the following commands:
