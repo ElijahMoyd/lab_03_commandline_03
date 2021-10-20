@@ -134,6 +134,8 @@ c. print out "I'm done backing up"
 
 Write out the code in your file below...
 ----------
+^T
+$ mkdir -p backup
 
 
 
