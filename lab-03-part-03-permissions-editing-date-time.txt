@@ -27,7 +27,7 @@ Wed, Oct 20, 2021  5:22:25 AM
 What command did you use, and what was its output?
 ----------
 $ cal
-
+i'm on windows so won't work
 
 ==========
 3. Go to your home directory.  Verify that you're in your home directory.
@@ -136,7 +136,8 @@ Write out the code in your file below...
 ----------
 ^T
 $ mkdir -p backup
-
+cp *backup.txt
+echo "I'm done"
 
 
 ==========
@@ -147,7 +148,7 @@ $ mkdir -p backup
 
 What commands did you use to do this?
 ----------
-
+$ touch 1.txt 2.txt
 
 
 ==========
